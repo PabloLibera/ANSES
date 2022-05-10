@@ -1,0 +1,17 @@
+.carousel {
+    padding-bottom: 30px;
+
+    .carousel-indicators {
+        margin-bottom: 0;
+
+        [data-bs-target]  {
+            border: 0;
+            background-color: $informativo;
+            width: 12px;
+            height: 12px;
+            border-radius: 100px;
+            margin-right: 6px;
+            margin-left: 6px;
+        }
+    }
+}

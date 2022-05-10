@@ -1,0 +1,24 @@
+.table {
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid $borde;
+
+    thead {
+        background-color: $informativo;
+        @include font-family(1rem, $blanco, 700);
+
+        th {
+            border-bottom: none;
+        }
+    }
+
+    tbody {
+        border-top: none;
+        background-color: $blanco;
+    }
+
+    &>:not(:first-child) {
+        border: none;
+        border-color: $borde;
+    }
+}

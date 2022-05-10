@@ -1,0 +1,62 @@
+.card {
+    padding: 1rem;
+    background-color: $blanco;
+    border: 1px solid $borde;
+
+    &.bt {
+        border-top: 6px solid;
+        
+        &.info {
+            border-top-color: $informativo;
+        }
+    
+        &.exito {
+            border-top-color: $exito;
+        }
+    
+        &.alerta {
+            border-top-color: $alerta;
+        }
+    
+        &.peligro {
+            border-top-color: $peligro;
+        }
+
+    }
+
+    &.bl {
+        border-left: 6px solid;
+
+        &.info {
+            border-left-color: $informativo;
+        }
+    
+        &.exito {
+            border-left-color: $exito;
+        }
+    
+        &.alerta {
+            border-left-color: $alerta;
+        }
+    
+        &.peligro {
+            border-left-color: $peligro;
+        }
+    }
+
+    &.link {
+        box-shadow: none;
+        transition: box-shadow .2s ease-in-out;
+        min-height: 106px;
+
+        a {
+            text-decoration: none;
+        }
+
+        &:hover {
+            box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.25);
+        }
+
+    }
+
+}

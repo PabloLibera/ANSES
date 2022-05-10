@@ -1,0 +1,112 @@
+.linea-tiempo {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-direction: column;
+
+    @include respond-to($md) {
+        flex-direction: row;
+    }
+
+    li {
+        padding-left: 32px;
+        position: relative;
+        flex-grow: 2;
+        padding-bottom: 16px;
+
+        @include respond-to($md) {
+            padding-left: 0;
+            padding-top: 16px;
+            padding-bottom: 0;
+        }
+
+        &::before {
+            content: '';
+            border-left: 3px solid $borde;
+            border-top: none;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 6px;
+
+            @include respond-to($md) {
+                border-left: none;
+                border-top: 3px solid $borde;
+                width: 100%;
+            }
+        }
+
+        &::after {
+            content: '';
+            text-align: center;
+            width: 16px;
+            height: 16px;
+            line-height: 18px;
+            text-align: center;
+            background-color: $borde;
+            border: 4px solid $blanco;
+            top: 0;
+            left: 0;
+            display: block;
+            border-radius: 100%;
+            position: absolute;
+            font-family: "Font Awesome 5 Free";
+
+            @include respond-to($md) {
+                top: -8px;
+            }
+        }
+
+        &:last-child {
+
+            &::before {
+                border-left: none;
+
+                @include respond-to($md) {
+                    border-top: none;
+                }
+            }
+        }
+
+        &.completa {
+            &::before {
+                border-color: $exito;
+            }
+
+            &::after {
+                background-color: $exito;
+                border: none;
+                content: "\f00c";
+                color: $blanco;
+                font-weight: 900;
+                font-size: 10px;
+            }
+        }
+
+        &.error {
+            &::before {
+                border-color: $peligro;
+            }
+
+            &::after {
+                background-color: $peligro;
+                border: none;
+                content: "\f00d";
+                color: $blanco;
+                font-weight: 900;
+                font-size: 10px;
+            }
+        }
+
+        &.actual {
+            &::after {
+                background-color: $exito;
+            }
+        }
+
+    }
+}
+    

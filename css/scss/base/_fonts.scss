@@ -1,0 +1,75 @@
+@include font-face('Encode Sans Medium', 'EncodeSans-Medium');
+@include font-face('Encode Sans Bold', 'EncodeSans-Bold');
+
+h1 {
+    @include font-family(32px, $informativo, 700);
+    line-height: 1.2;
+    letter-spacing: -0.005em;
+}
+
+h2 {
+    @include font-family(24px, $negro, 700);
+    line-height: 1.2;
+    letter-spacing: -0.005em;
+}
+
+h3 {
+    @include font-family(20px, $negro, 700);
+    line-height: 24px;
+    letter-spacing: -0.005em;
+
+    &.informativo {
+        color: $informativo;
+    }
+}
+
+h4 {
+    @include font-family(12px, $negro, 700);
+    text-transform: uppercase;
+    line-height: 1rem;
+    letter-spacing: 0.1em;
+}
+
+p {
+    @include font-family(16px, $negro, 500);
+    line-height: 1.5;
+    letter-spacing: 0em;
+
+    strong {
+        @include font-family(16px, $negro, 700);
+    }
+
+    &.chico {
+        @include font-family(12px, $negro, 500);
+
+        strong {
+            @include font-family(12px, $negro, 700);
+        }
+    }
+
+    &.lead {
+        @include font-family(1.25rem, $negro, 500);
+    }
+}
+
+label {
+    @include font-family(12px, $negro, 700);
+    text-transform: uppercase;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.link {
+    @include font-family(1em, $link, 700);
+    min-width: fit-content;
+       
+    &:hover {
+        color: $link-hover;
+    }
+
+    i {
+        transition: transform 0.2s ease-in-out;
+    }
+}

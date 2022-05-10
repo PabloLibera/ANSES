@@ -1,0 +1,102 @@
+.btn {
+    @include font-family(0.875rem, $negro, 700);
+    text-transform: uppercase;
+    /*line-height: 0.875rem;*/
+    line-height: 1.5rem;
+    /*padding: 0.5rem 1rem;*/
+    padding: 0.2rem 1rem;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+
+    &.btn-primary {
+        background-color: $informativo;
+        border-color: $informativo;
+        color: $blanco;
+
+        &:hover {
+            background-color: $informativo-claro;
+            border-color: $informativo-claro;
+            box-shadow: 0 1px 3px 1px rgba($negro, .15);
+        }
+    }
+
+    &.btn-outline-primary {
+        color: $informativo;
+        border-color: $informativo;
+
+        &:hover {
+            background-color: $informativo-claro;
+            border-color: $informativo-claro;
+            color: $blanco;
+        }
+    }
+
+    &.btn-secondary {
+        background-color: transparent;
+        border-color: transparent;
+        color: $informativo;
+
+        &:hover {
+            background-color: $hover;
+            border-color: $hover;
+        }
+    }
+
+    &.btn-outline-secondary {
+        color: $informativo;
+        border-color: $borde;
+        color: $informativo;
+
+        &:hover {
+            background-color: $hover;
+            border-color: $hover;
+        }
+    }
+
+    &.btn-link {
+        color: $institucional;
+
+        &:hover {
+            color: $informativo;
+        }
+    }
+
+    &.no-label {
+        i {
+            margin-right: 0 !important;
+        }
+
+        .icn {
+            margin-right: 0 !important; 
+        }
+    }
+
+    .icn {
+        /*width: 0.875rem;
+        height: 0.875rem;*/
+        width: 1.5rem;
+        height: 1.5rem;
+        line-height: 1.5rem;
+        vertical-align: middle;
+        text-align: center;
+        margin-right: 0.5rem;
+        display: inline-block;
+    }
+
+    i {
+        margin-right: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    span {
+        height: 1.5rem;
+        vertical-align: middle;
+        display: inline-block;
+
+        + .icn {
+            margin-left: 0.5rem;
+            margin-right: 0;
+        }
+    }
+}

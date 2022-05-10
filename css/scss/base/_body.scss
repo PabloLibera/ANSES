@@ -1,0 +1,30 @@
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #888 ligthen($negro, 5%);
+}
+
+body {
+    background-color: $fondo;
+    @include font-family(16px, $negro, 500);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+  

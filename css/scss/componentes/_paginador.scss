@@ -1,0 +1,32 @@
+.pagination {
+    
+    .page-item {
+        
+        .page-link {
+            color: $link;
+            border-color: $borde;
+
+            &:hover {
+                background-color: $hover;
+                border-color: $hover;
+            }
+        }
+
+        &.active {
+
+            .page-link {
+                background-color: $link;
+                border-color: $link;
+                color: $blanco;
+            }
+        }
+
+        &.disabled {
+
+            .page-link {
+                color: lighten($negro, 25%);
+            }
+            
+        }
+    }
+}

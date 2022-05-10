@@ -1,0 +1,35 @@
+.modal {
+
+    .modal-dialog {
+
+        .modal-content {
+            border-top: 6px solid transparent;
+        }
+        
+
+        &.informativo {
+            .modal-content {
+                border-top-color: $informativo;
+            }
+        }
+
+        &.exito {
+            .modal-content {
+                border-top-color: $exito;
+            }
+        }
+
+        &.alerta {
+            .modal-content {
+                border-top-color: $alerta;
+            }
+        }
+
+        &.peligro {
+            .modal-content {
+                border-top-color: $peligro;
+            }
+        }
+    }
+
+}

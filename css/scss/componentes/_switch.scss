@@ -1,0 +1,56 @@
+.form-switch {
+    padding-left: 3.5em;
+
+    .form-check-label {
+        line-height: 2em;
+    }
+
+    .form-check-input {
+        min-height: 1.5rem;
+        width: 3em;
+        margin-left: -3.5em;
+        height: 1.5em;
+        background-color: $negro;
+        position: relative;
+        background-image: none;
+
+        &::before {
+            content: '';
+            width: .9em;
+            height: .9em;
+            background-color: $blanco;
+            border-radius: 100%;
+            position: absolute;
+            top: .25em;
+            left: .25em;
+            display: block;
+            transition: transform .15s ease-in-out;
+            transform: translateX(0);
+        }
+
+        &::after {
+            content: 'NO';
+            @include font-family(12px, $blanco, 500);
+            line-height: 1.9em;
+            height: 1.9em;
+            display: inline-block;
+            position: absolute;
+            top:0;
+            left: unset;
+            right: .5em;
+        }
+
+        &:checked {
+            background-image:none;
+            background-color: $exito;
+            &::before {
+                transform: translateX(1.5em);
+            }
+            &::after {
+                content: 'SI';
+                left: .8em;
+                right: unset;
+            }
+        }
+    }
+}

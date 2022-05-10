@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mi ANSES</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <!--<link href="css/fontawesome/all.min.css" rel="stylesheet">-->
+
+    <!-- ANSES UI -->
+    <link href="css/anses-ui.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- HEADER -->
+
+    <header class="navbar sticky-top flex-md-nowrap s-60">
+        <div class="container-fluid">
+            <div class="navbar-brand d-flex align-items-end">
+                <img src="imgs/logo_mianses.svg" alt="Logo mi anses">
+                <span class="version" aria-hidden="true">v2.1.3</span>
+            </div>
+
+            <button class="navbar-toggler position-absolute d-lg-none collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+                aria-label="Menú principal" tabindex="0">
+                <div id="nav-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+
+            <div id="buscador" class="flex-grow-1 mx-lg-3 d-lg-block collapse">
+                <div class="input-group">
+                    <input type="search" class="form-control" placeholder="Buscar…"
+                        aria-label="Ingresá el texto para buscar">
+                </div>
+            </div>
+
+            <ul class="nav nav-pills" role="navigation">
+                <li class="nav-item">
+                    <button class="btn btn-secondary ms-2 ms-xl-3 d-lg-none toggler no-label collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#buscador" aria-controls="buscador"
+                        aria-expanded="false" aria-label="Buscar">
+                        <i class="icn-buscar" aria-hidden="true"></i>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-secondary ms-2 ms-xl-3 d-none d-lg-flex" id="atencionVirtual" href="#"
+                        target="_blank" aria-label="Atención virtual">
+                        <i class="icn-atencion-virtual" aria-hidden="true"></i>
+                        <span>Atención virtual</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown notificaciones">
+                        <button class="btn btn-secondary ms-2 ms-xl-3 dropdown-toggle no-label" type="button"
+                            id="notificaciones" data-bs-toggle="dropdown" aria-expanded="false"
+                            aria-label="Notificaciones">
+                            <i class="icn-notificaciones" aria-hidden="true"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end s-40" aria-labelledby="notificaciones">
+                            <li>
+                                <h4 class="dropdown-header">Notificaciones</h4>
+                            </li>
+                            <li class="nueva">
+                                <a class="dropdown-item" href="#" role="link">¡Se acreditó tu haber jubilatorio!</a>
+                            </li>
+                            <li class="nueva">
+                                <a class="dropdown-item" href="#" role="link">Lorem ipsum dolor sit amet, consectetuer
+                                    adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                                    penatibus et magnis dis p</a>
+                            </li>
+                            <li class="nueva">
+                                <a class="dropdown-item" href="#" role="link">Lorem ipsum dolor sit amet, consectetuer
+                                    adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                                    penatibus et magnis dis p</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" role="link">Lorem ipsum dolor sit amet, consectetuer
+                                    adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                                    penatibus et magnis dis p</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" role="link">Lorem ipsum dolor sit amet, consectetuer
+                                    adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                                    penatibus et magnis dis p</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" role="link">Lorem ipsum dolor sit amet, consectetuer
+                                    adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                                    penatibus et magnis dis p</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" role="link">Lorem ipsum dolor sit amet, consectetuer
+                                    adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                                    penatibus et magnis dis p</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" role="link">Lorem ipsum dolor sit amet, consectetuer
+                                    adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                                    penatibus et magnis dis p</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" role="link">Lorem ipsum dolor sit amet, consectetuer
+                                    adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                                    penatibus et magnis dis p</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" role="link">Lorem ipsum dolor sit amet, consectetuer
+                                    adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                                    penatibus et magnis dis p</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                <li class="vr d-none d-xl-inline-block ms-xl-3"></li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary ms-2 ms-xl-3 dropdown-toggle" type="button" id="nombreUsuario"
+                            data-bs-toggle="dropdown" aria-expanded="false" aria-label="Datos personales">
+                            <i class="icn-modo-usuario" aria-hidden="true"></i>
+                            <span>Pablo Diego Piñero</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end s-40" aria-labelledby="nombreUsuario" role="menubar">
+                            <li role="menuitem" class="d-xl-none" aria-hidden="true">
+                                <div class="dropdown-item">
+                                    <i class="icn-modo-usuario" aria-hidden="true"></i>
+                                    <span>Pablo Diego Piñero</span>
+                                </div>
+                            </li>
+                            <li role="menuitem" id="numeroCuil">
+                                <div class="dropdown-item">
+                                    <i class="icn-constancia-de-cuil" aria-hidden="true"></i>
+                                    <span>00-00000000-0</span>
+                                </div>
+                            </li>
+                            <li role="menuitem" id="numeroTelefono">
+                                <div class="dropdown-item">
+                                    <i class="icn-telefono" aria-hidden="true"></i>
+                                    <span>+54 (11) 0000-0000</span>
+                                </div>
+                            </li>
+                            <li role="menuitem" id="correoElectronico">
+                                <div class="dropdown-item">
+                                    <i class="icn-email" aria-hidden="true"></i>
+                                    <span>pablo@mail.com.ar</span>
+                                </div>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" role="link">
+                                    <i class="icn-datos-de-contacto" aria-hidden="true"></i>
+                                    <span>Mis datos de contacto</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" role="link">
+                                    <i class="icn-carga-de-cv" aria-hidden="true"></i>
+                                    <span>Subí tu Curriculum Vitae</span>
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" role="link">
+                                    <i class="icn-cerrar-sesion" aria-hidden="true"></i>
+                                    <span>Cerrar sesión</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+    </header>
+    <!--  / HEADER -->
+
+    <!-- SIDEBAR -->
+    <nav id="sidebarMenu" class="d-lg-block sidebar collapse">
+        <div class="position-sticky pt-3 scroll">
+            <ul id="menuPrincipal" class="nav" aria-label="Menú principal">
+                <li class="nav-item" aria-current="page">
+                    <a class="nav-link" href="#">
+                        <i class="icn icn-inicio" aria-hidden="true"></i>
+                        <span>Inicio</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <button class="btn btn-toggle" data-bs-toggle="collapse"
+                        data-bs-target="#menuInformacionPersonal-collapse" aria-expanded="true">
+                        <i class="icn icn-informacion-personal" aria-hidden="true"></i>
+                        <span>Información personal</span>
+                    </button>
+                    <div class="collapse show" id="menuInformacionPersonal-collapse" data-bs-parent="#menuPrincipal">
+                        <ul class="btn-toggle-nav">
+                            <li><a href="#">Domicilio y datos de contacto</a></li>
+                            <li><a href="#" aria-label="Constancia de cuil/cuit">Constancia de CUIL/T</a></li>
+                            <li><a href="#">Certificación negativa</a></li>
+                            <li><a href="#">Mis turnos</a></li>
+                            <li aria-current="page"><a class="active" href="#">Datos personales y familiares</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <button class="btn btn-toggle collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#menuCobros-collapse" aria-expanded="false">
+                        <i class="icn icn-cobros" aria-hidden="true"></i>
+                        <span>Cobros</span>
+                    </button>
+                    <div class="collapse" id="menuCobros-collapse" data-bs-parent="#menuPrincipal">
+                        <ul class="btn-toggle-nav">
+                            <li><a href="#">Cambiar lugar de cobro jubilaciones y pensiones</a></li>
+                            <li><a href="#">Cambiar lugar de cobro asignaciones familiares</a></li>
+                            <li><a href="#">Consultar fecha y lugar de cobro</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <button class="btn btn-toggle collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#menuCreditosAnses-collapse" aria-expanded="false" aria-label="Créditos Anses">
+                        <i class="icn icn-creditos-anses" aria-hidden="true"></i>
+                        <span>Créditos ANSES</span>
+                    </button>
+                    <div class="collapse" id="menuCreditosAnses-collapse" data-bs-parent="#menuPrincipal">
+                        <ul class="btn-toggle-nav">
+                            <li><a href="#">Solicitar un crédito jubilaciones y pensiones</a></li>
+                            <li><a href="#">Consultar el monto de mi cuota</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <button class="btn btn-toggle collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#menuHijos-collapse" aria-expanded="false">
+                        <i class="icn icn-hijas-e-hijos" aria-hidden="true"></i>
+                        <span>Hijas e Hijos</span>
+                    </button>
+                    <div class="collapse" id="menuHijos-collapse" data-bs-parent="#menuPrincipal">
+                        <ul class="btn-toggle-nav">
+                            <li><a href="#">Presentar un certificado escolar</a></li>
+                            <li><a href="#" aria-label="Refuerzo por emergencia sanitaria (Amba)">Refuerzo por
+                                    emergencia sanitaria (AMBA)</a></li>
+                            <li><a href="#">Declaración jurada libreta AUH 2020</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <button class="btn btn-toggle collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#menuTrabajo-collapse" aria-expanded="false">
+                        <i class="icn icn-trabajo" aria-hidden="true"></i>
+                        <span>Trabajo</span>
+                    </button>
+                    <div class="collapse" id="menuTrabajo-collapse" data-bs-parent="#menuPrincipal">
+                        <ul class="btn-toggle-nav">
+                            <li><a href="#">Consultar historia laboral</a></li>
+                            <li><a href="#">Gestionar Monotributo</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <button class="btn btn-toggle collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#menuJubilacionesPensiones-collapse" aria-expanded="false">
+                        <i class="icn icn-jubilaciones-y-pensiones" aria-hidden="true"></i>
+                        <span>Jubilaciones y pensiones</span>
+                    </button>
+                    <div class="collapse" id="menuJubilacionesPensiones-collapse" data-bs-parent="#menuPrincipal">
+                        <ul class="btn-toggle-nav">
+                            <li><a href="#">Solicitar pensión por fallecimiento</a></li>
+                            <li><a href="#">Reparación histórica</a></li>
+                            <li><a href="#">Reclamos de mutuales y otras entidades</a></li>
+                            <li><a href="#">Consulta de expediente</a></li>
+                            <li><a href="#">Consultar recibo de haberes</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <button class="btn btn-toggle collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#menuProgramas-collapse" aria-expanded="false">
+                        <i class="icn icn-programas-y-beneficios" aria-hidden="true"></i>
+                        <span>Programas y beneficios</span>
+                    </button>
+                    <div class="collapse" id="menuProgramas-collapse" data-bs-parent="#menuPrincipal">
+                        <ul class="btn-toggle-nav">
+                            <li><a href="#" aria-label="Generar pin Sube">Generar PIN SUBE</a></li>
+                            <li><a href="#" aria-label="Certificado de vivienda (Renabap)">Certificado de vivienda
+                                    (RENABAP)</a></li>
+                            <li><a href="#">Más cultura</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <button class="btn btn-toggle collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#menuSolicitudPrestaciones-collapse" aria-expanded="false">
+                        <i class="icn icn-solicitud-de-prestaciones" aria-hidden="true"></i>
+                        <span>Solicitud de prestaciones</span>
+                    </button>
+                    <div class="collapse" id="menuSolicitudPrestaciones-collapse" data-bs-parent="#menuPrincipal">
+                        <ul class="btn-toggle-nav">
+                            <li><a href="#">Pensión no contributiva por invalidez</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <button class="btn btn-toggle collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#menuDenuncias-collapse" aria-expanded="false">
+                        <i class="icn icn-denuncias-y-reclamos" aria-hidden="true"></i>
+                        <span>Denuncias y reclamos</span>
+                    </button>
+                    <div class="collapse" id="menuDenuncias-collapse" data-bs-parent="#menuPrincipal">
+                        <ul class="btn-toggle-nav">
+                            <li><a href="#">Hacer un reclamo o sugerencia</a></li>
+                            <li><a href="#">Hacer una denuncia</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <footer>
+            <div class="d-flex justify-content-between logos">
+                <img src="imgs/logo_presidencia.svg" alt="Logo Argentina Presidencia">
+                <img src="imgs/logo_argentina-unida.svg" alt="Logo Argentina Unida">
+            </div>
+        </footer>
+    </nav>
+    <!--  / SIDEBAR -->
+
+    <!-- CONTENEDOR -->
+    <main class="main container-fluid">
+        <div class="row">
+            <!-- Grilla principal -->
+            <div class="col-12 col-xxl-11 offset-xxl-1">
+
+                <div class="row">
+
+                    <!-- Columna principal -->
+                    <div class="col-12 col-xl-8 col-xxl-7">
+                        <h1 class="mb-4">Datos personales y familiares</h1>
+                        <hr>
+                        <p class="mb-4">Para realizar gestiones, tus datos personales y tus relaciones familiares deben
+                            estar actualizadas en ANSES. Si tenés que agregar una nueva relación, modificar o verificar
+                            alguna de las existentes, <a
+                                href="https://www.anses.gob.ar/tramite/acreditacion-de-datos-personales-y-familiares"
+                                target="_blank" class="link">consultá cómo actualizar datos personales y relaciones
+                                familiares</a>.</p>
+
+                        <h2 class="mb-3">Datos personales</h2>
+                        <div class="card mb-5 s-40 bl info">
+                            <div class="card-header">
+                                <h3 class="mb-md-0">Piñero Pablo Diego</h3>
+                                <a href="#" class="link text-decoration-none d-flex align-items-center" role="button">
+                                    <i class="icn-pdf" aria-hidden="true"></i>
+                                    <span class="text-decoration-underline">Descargar resumen</span>
+                                </a>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-4">
+                                    <h4>CUIL</h4>
+                                    <p class="mb-3">00-00000000-0</p>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <h4>Documento</h4>
+                                    <p class="mb-3">00000000</p>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <h4>Género</h4>
+                                    <p class="mb-3">Masculino</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-4">
+                                    <h4>Fecha de nacimiento</h4>
+                                    <p class="mb-3">00/00/0000</p>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <h4>Estado civil</h4>
+                                    <p class="mb-3">Soltero</p>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <h4>Nacionalidad</h4>
+                                    <p class="mb-3">Argentina</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 class="mb-3">Personas relacionadas</h2>
+
+                        <!-- Persona relacionada -->
+                        <div class="card mb-3 s-40 bl info">
+                            <div class="card-header">
+                                <h3 class="mb-md-0">Piñero Pablo Diego</h3>
+                                <a href="#" class="link text-decoration-none d-flex align-items-center" role="button">
+                                    <i class="icn-pdf" aria-hidden="true"></i>
+                                    <span class="text-decoration-underline">Descargar resumen</span>
+                                </a>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-4">
+                                    <h4>CUIL</h4>
+                                    <p class="mb-3">00-00000000-0</p>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <h4>Relación</h4>
+                                    <p class="mb-3">Hijo/a</p>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <h4>Inicio relación</h4>
+                                    <p class="mb-3">00/00/0000</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Persona relacionada -->
+
+                        <!-- Persona relacionada -->
+                        <div class="card mb-3 s-40 bl alerta">
+                            <div class="card-header">
+                                <h3 class="mb-md-0">Piñero Pablo Diego</h3>
+                                <a href="#" class="link text-decoration-none d-flex align-items-center" role="button">
+                                    <i class="icn-pdf" aria-hidden="true"></i>
+                                    <span class="text-decoration-underline">Descargar resumen</span>
+                                </a>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-4">
+                                    <h4>CUIL</h4>
+                                    <p class="mb-3">00-00000000-0</p>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <h4>Relación</h4>
+                                    <p class="mb-3">Hijo/a</p>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <h4>Inicio relación</h4>
+                                    <p class="mb-3">00/00/0000</p>
+                                </div>
+                            </div>
+                            <p class="alert alert-warning">
+                                Tenés que presentar tu documento de identidad.
+                            </p>
+                        </div>
+                        <!-- /Persona relacionada -->
+
+                    </div>
+
+                    <!-- Aside -->
+                    <div class="col-12 col-xl-4 col-xxl-3 offset-xxl-2">
+                        <hr class="d-block d-xl-none">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-12 col-xxl-12">
+                                <div class="card bt alerta s-40 mb-4">
+                                    <h3 class="card-title informativo mb-3">Registro de huella</h3>
+                                    <img class="img-404 mb-3 mx-auto d-block" src="imgs/no_huella.svg"
+                                        alt="Imagen de una huella digital con una X">
+                                    <p class="text-center mb-0">No tenés huella registrada.</p>
+                                    <a class="text-center link"
+                                        href="https://www.anses.gob.ar/tramite/registro-de-mi-huella"
+                                        target="_blank">¿Cómo registrar tu huella?</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--  / CONTENEDOR -->
+
+    <!-- Javascript-->
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

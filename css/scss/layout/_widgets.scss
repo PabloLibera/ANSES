@@ -1,0 +1,62 @@
+.fecha-cobro {
+    
+    h3 {
+        padding-left: 24px;
+        @include font-family(12px, $negro, 700);
+        text-transform: uppercase;
+        line-height: 15px;
+        letter-spacing: 0.1em;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    
+        p {
+            margin: 0;
+        }
+    
+        li {
+            border-bottom: 1px solid $borde;
+            padding: 8px 0 8px 24px;
+            position: relative;
+            
+            &:first-child {
+                padding-top: 0;
+            }
+    
+            &:last-child {
+                border-bottom: none;
+                padding-bottom: 0;
+            }
+    
+            &.fecha {
+                &::before {
+                    content: $icn-calendario-de-pagos;
+                    font-family: 'Iconos Anses';
+                    font-size: 1.5rem;
+                    line-height: 1;
+                    color: $informativo;
+                    position: absolute;
+                    left: -0.3rem;
+                    top: 0;
+                }
+            }
+    
+            &.lugar {
+                &::before {
+                    content: $icn-consultar-fecha-y-lugar-de-cobro;
+                    font-family: 'Iconos Anses';
+                    font-size: 1.5rem;
+                    line-height: 1;
+                    color: $informativo;
+                    position: absolute;
+                    left: -0.3rem;
+                    top: 8px;
+                }
+            }
+        }
+    }
+    
+}

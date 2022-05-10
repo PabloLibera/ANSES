@@ -1,0 +1,89 @@
+.dropdown {
+
+    .dropdown-toggle {
+
+        &::after{
+            width: 0.875rem;
+            height: 0.875rem;
+            line-height: 0.875rem;
+            border: none;
+            vertical-align: middle;
+            margin-left: 0.5rem;
+            font-family: "Iconos ANSES";
+            content: $icn-despliegue-abajo;
+            font-size: 1rem;
+            text-align: center;
+            transition: transform .2s ease-in-out;
+            
+        }
+
+        &.show {
+            &::after{ 
+                transform: rotate(-180deg);
+            }
+        }
+
+        i {
+            margin-right: 0.5rem;
+        }
+
+        span {
+            + i {
+                margin-left: 0.5rem;
+                margin-right: 0;
+            }
+        }
+    }
+
+    .dropdown-menu {
+        border-radius: 5px;
+        border-color: $borde;
+
+        .dropdown-header {
+            @include font-family(0.75rem, $negro, 700);
+            letter-spacing: 0.1em;
+        }
+
+        .dropdown-item {
+            @include font-family(0.875rem, $negro, 500);
+            display: flex; 
+            align-items: center; 
+
+            &:hover{
+                background-color: $hover;
+            }
+
+            &.active, &:active {
+                background-color: $link;
+                color: $blanco;
+
+                .icn {
+                    fill: $blanco;
+                }
+
+                i {
+                    color: $blanco;
+                }
+            }
+
+            span {
+                line-height: 1rem;
+            }
+
+            .icn {
+                width: 0.875rem;
+                height: 0.875rem;
+                vertical-align: text-bottom;
+                margin-right: 0.5rem;
+                display: inline-block;
+                fill: rgba($institucional-oscuro, 0.6);
+            }
+
+            i {
+                color: rgba($institucional-oscuro, 0.6);
+                margin-right: 0.5rem;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+$institucional: #37bbed;
+$informativo: #004F90;
+$exito: #35BF5A;
+$alerta: #F79420;
+$peligro: #DD1C1A;
+$hover: #A7CBEA;
+
+$negro: #333333;
+$fondo: #E7E7E7;
+$blanco: #ffffff;
+$borde: #DDDDDD;
+
+$link: #126AB3;
+$link-hover: #6a1b99;
+
+$institucional-claro: lighten($institucional, 10%);
+$informativo-claro: lighten($informativo, 10%);
+$exito-claro: lighten($exito, 10%);
+$alerta-claro: lighten($alerta, 10%);
+$peligro-claro: lighten($peligro, 10%);
+
+$institucional-oscuro: darken($institucional, 20%);
+$informativo-oscuro: darken($informativo, 20%);
+$exito-oscuro: darken($exito, 20%);
+$alerta-oscuro: darken($alerta, 20%);
+$peligro-oscuro: darken($peligro, 20%);

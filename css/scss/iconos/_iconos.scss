@@ -1,0 +1,649 @@
+@font-face {
+    font-family: 'Iconos ANSES';
+    src: url('webfonts/Iconos-ANSES.eot?eyfykj');
+    src: url('webfonts/Iconos-ANSES.eot?eyfykj#iefix') format('embedded-opentype'),
+         url('webfonts/Iconos-ANSES.ttf?eyfykj') format('truetype'),
+         url('webfonts/Iconos-ANSES.woff?eyfykj') format('woff'),
+         url('webfonts/Iconos-ANSES.svg?eyfykj#Iconos-ANSES') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+i {
+	font-family: 'Iconos ANSES' !important;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	&.icn-1 {
+		font-size: 1rem * .25;
+	}
+
+	&.icn-2 {
+		font-size: 1rem * .5;
+	}
+
+	&.icn-3 {
+		font-size: 1rem;
+	}
+
+	&.icn-4 {
+		font-size: 1rem * 1.5;
+	}
+
+	&.icn-5 {
+		font-size: 1rem * 3;
+	}
+}
+  
+  .icn-acerca-de {
+    &:before {
+      content: $icn-acerca-de; 
+    }
+  }
+  .icn-alerta {
+    &:before {
+      content: $icn-alerta; 
+    }
+  }
+  .icn-anses-sustentable {
+    &:before {
+      content: $icn-anses-sustentable; 
+    }
+  }
+  .icn-anses-va-a-tu-trabajo {
+    &:before {
+      content: $icn-anses-va-a-tu-trabajo; 
+    }
+  }
+  .icn-aportes-de-trabajo-autnomo {
+    &:before {
+      content: $icn-aportes-de-trabajo-autnomo; 
+    }
+  }
+  .icn-asignacion-universal {
+    &:before {
+      content: $icn-asignacion-universal; 
+    }
+  }
+  .icn-asignaciones-familiares {
+    &:before {
+      content: $icn-asignaciones-familiares; 
+    }
+  }
+  .icn-asignaciones-por-la-madre {
+    &:before {
+      content: $icn-asignaciones-por-la-madre; 
+    }
+  }
+  .icn-atencion-virtual {
+    &:before {
+      content: $icn-atencion-virtual; 
+    }
+  }
+  .icn-beneficios-anses {
+    &:before {
+      content: $icn-beneficios-anses; 
+    }
+  }
+  .icn-buscar {
+    &:before {
+      content: $icn-buscar; 
+    }
+  }
+  .icn-calendario-de-pagos {
+    &:before {
+      content: $icn-calendario-de-pagos; 
+    }
+  }
+  .icn-cambiar-lugar-de-cobro {
+    &:before {
+      content: $icn-cambiar-lugar-de-cobro; 
+    }
+  }
+  .icn-canales-de-atencion {
+    &:before {
+      content: $icn-canales-de-atencion; 
+    }
+  }
+  .icn-canales-de-contacto {
+    &:before {
+      content: $icn-canales-de-contacto; 
+    }
+  }
+  .icn-cancelar-turno {
+    &:before {
+      content: $icn-cancelar-turno; 
+    }
+  }
+  .icn-carga-de-cv {
+    &:before {
+      content: $icn-carga-de-cv; 
+    }
+  }
+  .icn-cerrar-sesion {
+    &:before {
+      content: $icn-cerrar-sesion; 
+    }
+  }
+  .icn-cerrar {
+    &:before {
+      content: $icn-cerrar; 
+    }
+  }
+  .icn-certificacion-negativa {
+    &:before {
+      content: $icn-certificacion-negativa; 
+    }
+  }
+  .icn-certificado-de-vivienda-renabap {
+    &:before {
+      content: $icn-certificado-de-vivienda-renabap; 
+    }
+  }
+  .icn-certificado-escolar {
+    &:before {
+      content: $icn-certificado-escolar; 
+    }
+  }
+  .icn-chequeado {
+    &:before {
+      content: $icn-chequeado; 
+    }
+  }
+  .icn-cobros {
+    &:before {
+      content: $icn-cobros; 
+    }
+  }
+  .icn-complemento-familiar {
+    &:before {
+      content: $icn-complemento-familiar; 
+    }
+  }
+  .icn-constancia-de-cuil {
+    &:before {
+      content: $icn-constancia-de-cuil; 
+    }
+  }
+  .icn-consulta-de-expedientes {
+    &:before {
+      content: $icn-consulta-de-expedientes; 
+    }
+  }
+  .icn-consulta-de-historia-laboral {
+    &:before {
+      content: $icn-consulta-de-historia-laboral; 
+    }
+  }
+  .icn-consulta-de-recibos {
+    &:before {
+      content: $icn-consulta-de-recibos; 
+    }
+  }
+  .icn-consultar-el-monto-de-mi-cuota {
+    &:before {
+      content: $icn-consultar-el-monto-de-mi-cuota; 
+    }
+  }
+  .icn-consultar-fecha-y-lugar-de-cobro {
+    &:before {
+      content: $icn-consultar-fecha-y-lugar-de-cobro; 
+    }
+  }
+  .icn-consultas {
+    &:before {
+      content: $icn-consultas; 
+    }
+  }
+  .icn-credito-refaccion {
+    &:before {
+      content: $icn-credito-refaccion; 
+    }
+  }
+  .icn-creditos-anses {
+    &:before {
+      content: $icn-creditos-anses; 
+    }
+  }
+  .icn-cuando-cobro {
+    &:before {
+      content: $icn-cuando-cobro; 
+    }
+  }
+  .icn-datos-de-contacto {
+    &:before {
+      content: $icn-datos-de-contacto; 
+    }
+  }
+  .icn-datos-personales-y-familiares {
+    &:before {
+      content: $icn-datos-personales-y-familiares; 
+    }
+  }
+  .icn-denuncias-y-reclamos {
+    &:before {
+      content: $icn-denuncias-y-reclamos; 
+    }
+  }
+  .icn-desempleo {
+    &:before {
+      content: $icn-desempleo; 
+    }
+  }
+  .icn-despliegue-abajo {
+    &:before {
+      content: $icn-despliegue-abajo; 
+    }
+  }
+  .icn-domicilio-y-datos-de-contacto {
+    &:before {
+      content: $icn-domicilio-y-datos-de-contacto; 
+    }
+  }
+  .icn-email {
+    &:before {
+      content: $icn-email; 
+    }
+  }
+  .icn-empresas-y-organismos {
+    &:before {
+      content: $icn-empresas-y-organismos; 
+    }
+  }
+  .icn-estado-de-tramite {
+    &:before {
+      content: $icn-estado-de-tramite; 
+    }
+  }
+  .icn-extraccion-sin-tarjeta {
+    &:before {
+      content: $icn-extraccion-sin-tarjeta; 
+    }
+  }
+  .icn-facebook {
+    &:before {
+      content: $icn-facebook; 
+    }
+  }
+  .icn-fe-de-vida {
+    &:before {
+      content: $icn-fe-de-vida; 
+    }
+  }
+  .icn-fecha-y-lugar-de-cobro {
+    &:before {
+      content: $icn-fecha-y-lugar-de-cobro; 
+    }
+  }
+  .icn-generar-pin-sube {
+    &:before {
+      content: $icn-generar-pin-sube; 
+    }
+  }
+  .icn-gestionar-monotributo-Social {
+    &:before {
+      content: $icn-gestionar-monotributo-Social; 
+    }
+  }
+  .icn-hacer-un-reclamo-o-sugerencia {
+    &:before {
+      content: $icn-hacer-un-reclamo-o-sugerencia; 
+    }
+  }
+  .icn-hacer-una-denuncia {
+    &:before {
+      content: $icn-hacer-una-denuncia; 
+    }
+  }
+  .icn-hijas-e-hijos-a-cargo {
+    &:before {
+      content: $icn-hijas-e-hijos-a-cargo; 
+    }
+  }
+  .icn-hijas-e-hijos {
+    &:before {
+      content: $icn-hijas-e-hijos; 
+    }
+  }
+  .icn-informacion-personal {
+    &:before {
+      content: $icn-informacion-personal; 
+    }
+  }
+  .icn-informacion {
+    &:before {
+      content: $icn-informacion; 
+    }
+  }
+  .icn-informe-de-aportes-previsionales {
+    &:before {
+      content: $icn-informe-de-aportes-previsionales; 
+    }
+  }
+  .icn-ingreso-familiar-de-emergencia {
+    &:before {
+      content: $icn-ingreso-familiar-de-emergencia; 
+    }
+  }
+  .icn-inicio {
+    &:before {
+      content: $icn-inicio; 
+    }
+  }
+  .icn-insatisfecho {
+    &:before {
+      content: $icn-insatisfecho; 
+    }
+  }
+  .icn-instagram {
+    &:before {
+      content: $icn-instagram; 
+    }
+  }
+  .icn-jubilacion-anticipada {
+    &:before {
+      content: $icn-jubilacion-anticipada; 
+    }
+  }
+  .icn-jubilaciones-y-pensiones {
+    &:before {
+      content: $icn-jubilaciones-y-pensiones; 
+    }
+  }
+  .icn-libreta-de-asignacion-universal {
+    &:before {
+      content: $icn-libreta-de-asignacion-universal; 
+    }
+  }
+  .icn-mas-cultura {
+    &:before {
+      content: $icn-mas-cultura; 
+    }
+  }
+  .icn-matrimonio-nacimiento-y-adopcion {
+    &:before {
+      content: $icn-matrimonio-nacimiento-y-adopcion; 
+    }
+  }
+  .icn-mi-contacto {
+    &:before {
+      content: $icn-mi-contacto; 
+    }
+  }
+  .icn-mi-historia-laboral {
+    &:before {
+      content: $icn-mi-historia-laboral; 
+    }
+  }
+  .icn-mis-asignaciones-familiares {
+    &:before {
+      content: $icn-mis-asignaciones-familiares; 
+    }
+  }
+  .icn-mis-asignaciones {
+    &:before {
+      content: $icn-mis-asignaciones; 
+    }
+  }
+  .icn-mis-datos {
+    &:before {
+      content: $icn-mis-datos; 
+    }
+  }
+  .icn-mis-turnos {
+    &:before {
+      content: $icn-mis-turnos; 
+    }
+  }
+  .icn-modificar-datos {
+    &:before {
+      content: $icn-modificar-datos; 
+    }
+  }
+  .icn-modo-representado {
+    &:before {
+      content: $icn-modo-representado; 
+    }
+  }
+  .icn-modo-usuario {
+    &:before {
+      content: $icn-modo-usuario; 
+    }
+  }
+  .icn-mutuales-y-entidades {
+    &:before {
+      content: $icn-mutuales-y-entidades; 
+    }
+  }
+  .icn-neutral {
+    &:before {
+      content: $icn-neutral; 
+    }
+  }
+  .icn-noticias-anses {
+    &:before {
+      content: $icn-noticias-anses; 
+    }
+  }
+  .icn-notificaciones {
+    &:before {
+      content: $icn-notificaciones; 
+    }
+  }
+  .icn-novedades {
+    &:before {
+      content: $icn-novedades; 
+    }
+  }
+  .icn-nuevo-turno {
+    &:before {
+      content: $icn-nuevo-turno; 
+    }
+  }
+  .icn-obra-social {
+    &:before {
+      content: $icn-obra-social; 
+    }
+  }
+  .icn-observatorio {
+    &:before {
+      content: $icn-observatorio; 
+    }
+  }
+  .icn-oficinas-de-anses {
+    &:before {
+      content: $icn-oficinas-de-anses; 
+    }
+  }
+  .icn-oficinas-de-atencin {
+    &:before {
+      content: $icn-oficinas-de-atencin; 
+    }
+  }
+  .icn-pension-adulto-mayor {
+    &:before {
+      content: $icn-pension-adulto-mayor; 
+    }
+  }
+  .icn-pension-derivada {
+    &:before {
+      content: $icn-pension-derivada; 
+    }
+  }
+  .icn-pension-no-contributiva {
+    &:before {
+      content: $icn-pension-no-contributiva; 
+    }
+  }
+  .icn-plan-mil-dias {
+    &:before {
+      content: $icn-plan-mil-dias; 
+    }
+  }
+  .icn-pnc-invalidez {
+    &:before {
+      content: $icn-pnc-invalidez; 
+    }
+  }
+  .icn-presentar-un-certificado-escolar {
+    &:before {
+      content: $icn-presentar-un-certificado-escolar; 
+    }
+  }
+  .icn-programas-y-beneficios {
+    &:before {
+      content: $icn-programas-y-beneficios; 
+    }
+  }
+  .icn-programas {
+    &:before {
+      content: $icn-programas; 
+    }
+  }
+  .icn-puam-y-pension-derivada {
+    &:before {
+      content: $icn-puam-y-pension-derivada; 
+    }
+  }
+  .icn-reclamos-de-mutuales-y-otras-entidades {
+    &:before {
+      content: $icn-reclamos-de-mutuales-y-otras-entidades; 
+    }
+  }
+  .icn-recursos-humanos {
+    &:before {
+      content: $icn-recursos-humanos; 
+    }
+  }
+  .icn-refuerzo-emergencia {
+    &:before {
+      content: $icn-refuerzo-emergencia; 
+    }
+  }
+  .icn-relaciones-familiares {
+    &:before {
+      content: $icn-relaciones-familiares; 
+    }
+  }
+  .icn-reliquidacin-de-impagos {
+    &:before {
+      content: $icn-reliquidacin-de-impagos; 
+    }
+  }
+  .icn-rennya {
+    &:before {
+      content: $icn-rennya; 
+    }
+  }
+  .icn-reparacion-economica {
+    &:before {
+      content: $icn-reparacion-economica; 
+    }
+  }
+  .icn-reparacion-historica {
+    &:before {
+      content: $icn-reparacion-historica; 
+    }
+  }
+  .icn-satisfecho {
+    &:before {
+      content: $icn-satisfecho; 
+    }
+  }
+  .icn-seguimiento-de-mi-expediente {
+    &:before {
+      content: $icn-seguimiento-de-mi-expediente; 
+    }
+  }
+  .icn-sentencias-judiciales {
+    &:before {
+      content: $icn-sentencias-judiciales; 
+    }
+  }
+  .icn-siguiente {
+    &:before {
+      content: $icn-siguiente; 
+    }
+  }
+  .icn-solicitar-pension-por-fallecimiento {
+    &:before {
+      content: $icn-solicitar-pension-por-fallecimiento; 
+    }
+  }
+  .icn-solicitud-de-pago {
+    &:before {
+      content: $icn-solicitud-de-pago; 
+    }
+  }
+  .icn-solicitud-de-prestaciones {
+    &:before {
+      content: $icn-solicitud-de-prestaciones; 
+    }
+  }
+  .icn-tareas-de-cuidado {
+    &:before {
+      content: $icn-tareas-de-cuidado; 
+    }
+  }
+  .icn-tarifa-social {
+    &:before {
+      content: $icn-tarifa-social; 
+    }
+  }
+  .icn-tarjeta-joven {
+    &:before {
+      content: $icn-tarjeta-joven; 
+    }
+  }
+  .icn-telefono {
+    &:before {
+      content: $icn-telefono; 
+    }
+  }
+  .icn-terminos-y-condiciones {
+    &:before {
+      content: $icn-terminos-y-condiciones; 
+    }
+  }
+  .icn-trabajo {
+    &:before {
+      content: $icn-trabajo; 
+    }
+  }
+  .icn-tramites {
+    &:before {
+      content: $icn-tramites; 
+    }
+  }
+  .icn-turnos {
+    &:before {
+      content: $icn-turnos; 
+    }
+  }
+  .icn-twitter {
+    &:before {
+      content: $icn-twitter; 
+    }
+  }
+  .icn-usuario {
+    &:before {
+      content: $icn-usuario; 
+    }
+  }
+  .icn-visita-segura {
+    &:before {
+      content: $icn-visita-segura; 
+    }
+  }
+  .icn-youtube {
+    &:before {
+      content: $icn-youtube; 
+    }
+  }

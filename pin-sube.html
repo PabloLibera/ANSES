@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mi ANSES</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- ANSES UI -->
+    <link href="css/anses-ui.css" rel="stylesheet">
+  
+</head>
+<body>
+
+
+    <!-- CONTENIDO -->
+    <main class="main container-fluid">
+        <div class="row">
+            <!-- Grilla principal -->
+            <div class="col-12 col-xl-8 col-xxl-7">
+                <h1 class="mb-4">Generar PIN SUBE para Tarifa Social Federal</h1>
+                <hr>
+                <p>Con este PIN (código de 6 números) podés asociar y registrar tu tarjeta SUBE para acceder a la <a href="https://bit.ly/TodoSobreTarifaSocial" class="link" target="_blank">Tarifa Social Federal</a> y viajar con descuento en transporte público.</p>
+                <div class="row">
+                    
+                    <!-- Columna principal -->
+                    <div class="col">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modalpinsube">generar pin</button>
+                  </div>
+             
+                    </div>
+                 
+                </div>
+
+
+
+<!--MODAL PIN-->
+
+<!-- Modal -->
+<div class="modal fade" id="Modalpinsube" tabindex="-1" aria-labelledby="ModalpinsubeLabel" aria-hidden="true">
+   
+        <div class="modal-dialog modal-dialog-centered exito icono">
+      <div class="modal-content exito">
+        <div class="modal-header">
+          <h3 class="modal-title" id="ModalpinsubeLabel"><b>Listo</b></h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">         
+            <p>Tu código es:</p>
+          <h5><b>4568</b></h5>
+          <p>Ingresá este código PIN en el formulario de la página de SUBE</p>
+         
+        </div>
+
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary">copiar este código al portapapeles</button>
+            <button type="button" class="btn btn-primary" href="https://tarjetasube.sube.gob.ar/SubeWeb/WebForms/Account/Views/clave-sube-registro.aspx">Registrar tarjeta sube</button>
+          </div>
+        
+        </div>
+      </div>
+
+  </div>
+
+            <!-- Aside -->
+            <div class="col-12 col-xl-4 col-xxl-3 offset-xxl-2">
+    <hr class="d-block d-xl-none">
+
+   
+
+    <div class="row">
+        <!-- Noticias -->
+        <div class="col-12 col-md-6 col-lg-6 col-xl-12 col-xxl-12">
+            <div class="card bt alerta s-40 mb-4">
+                
+                            <h3 class="card-title">Quiénes pueden viajar con descuento:</h3>  
+                        
+                            <ul>
+                            <li>Personas Jubiladas y pensionadas</li>
+                            <li>Personal de Servicio Doméstico</li>
+                            <li>Personas Veteranas de la Guerra de Malvinas</li>
+                            <li>Monotributistas Sociales</li>
+                            <li>Titulares de:
+                                        <ul>
+                                            <li>Asignación Universal por Hija/o</li>
+                                            <li>Asignación por Embarazo</li>
+                                            <li>Programa de Jóvenes con Más y Mejor trabajo</li>
+                                            <li> Seguro y prestación por desempleo</li>
+                                            <li>Seguro de capacitación y Empleo</li>
+                                            <li>Programa Promover Igualdad de Oportunidades</li>
+                                            <li>Programa Progresar</li>
+                                            <li>Programa Potenciar Trabajo</li>
+                                            <li>Pensiones No Contributivas</li>
+                                        </ul>
+                            </li>
+                            </ul>
+                        </p>
+                        </div>
+                    </div>
+                </div>                            
+            </div>
+        </div>
+    </main>
+    <!--  / CONTENIDO -->
+
+       <!-- scripts -->  
+       <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+       <!-- / scripts -->  
+
+ 
+     
+</body>
+</html>

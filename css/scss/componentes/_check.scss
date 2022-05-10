@@ -1,0 +1,44 @@
+.form-check {
+    
+    .form-check-label {
+        @include font-family(16px, $negro, 500);
+        line-height: 1.5rem;
+        letter-spacing: 0em;
+        text-transform: unset;
+    }
+
+    .form-check-input {
+        border-color: $borde;
+
+        &:checked {
+            border-color: $borde;
+            background-color: $link;
+    
+            &[type="radio"] {
+                background-color: $blanco;
+                background-image: none;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    background-color: $link;
+                    width: .5rem;
+                    height: .5rem;
+                    border-radius: 100%;
+                    position: absolute;
+                    top: .2rem;
+                    left: .2rem;
+                }
+            }
+    
+        }
+    }
+}
+
+fieldset {
+    legend {
+        @include font-family(16px, $negro, 500);
+        line-height: 1.5rem;
+        letter-spacing: 0em;
+    }
+}

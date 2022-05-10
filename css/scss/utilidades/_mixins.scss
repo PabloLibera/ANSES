@@ -1,0 +1,41 @@
+@mixin font-face($font-family-name, $font-file){
+    @font-face {
+        font-family: $font-family-name;
+            
+        src: url('webfonts/#{$font-file}.ttf') format('truetype'),
+             url('webfonts/#{$font-file}.eot?#iefix') format('embedded-opentype'),
+             url('webfonts/#{$font-file}.woff2') format('woff2'),
+             url('webfonts/#{$font-file}.woff') format('woff'),
+             url('webfonts/#{$font-file}.ttf') format('truetype');
+        font-stretch: 100%;
+        font-style: normal;
+        font-display: swap;
+    }
+}
+
+@mixin font-family($font_size, $font_color, $font_weight) {
+    font: {
+        size: $font_size;
+        weight: 500;
+    }
+    color: $font_color;
+
+    @if $font_weight < 700 {
+        font-family: 'Encode Sans Medium', sans-serif;
+    } @else {
+        font-family: 'Encode Sans Bold', sans-serif;
+    }
+}
+
+$xxl: '(min-width: 1400px)';
+$xl: '(min-width: 1200px)';
+$lg: '(min-width: 992px)';
+$md: '(min-width: 768px)';
+$sm: '(min-width: 576px)';
+
+@mixin respond-to($media) {
+	@media #{$media} {
+		@content;
+	}
+}
+

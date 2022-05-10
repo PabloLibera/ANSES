@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mi ANSES</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="css/fontawesome/all.min.css" rel="stylesheet">
+
+    <!-- ANSES UI -->
+    <link href="css/anses-ui.css" rel="stylesheet">
+</head>
+<body>
+
+
+    <!-- CONTENIDO -->
+    <main class="main container-fluid">
+        <div class="row">
+            <!-- Grilla principal -->
+            <div class="col-12 col-xl-11 offset-xl-1">
+                <h1 class="mb-4">Encabezado principal</h1>
+                
+                <div class="row">
+                    
+                    <!-- Columna principal -->
+                    <div class="col-12 col-lg-8 col-xl-7">
+                        <h2 class="mb-3">Titulo columna principal</h2>
+                        <p>Contenido de texto.</p>
+                        
+                        <hr>
+                        
+                        <h2>Título columna principal</h2>
+                        <p>Contenido de texto.</p>
+
+                        <!-- 
+                            bl: border left / bt: border top / info: color azul, exito: color verde, alerta: amarillo, peligro: rojo
+                            s-40, s-60, s-100 y s-200: niveles de sombra
+                        -->
+                        <div class="card bl exito s-40 mb-5">
+                            <div class="mb-3">
+                                <label for="obraSocial">Obra social</label>
+                                <select class="form-select" aria-label="Obra social" id="obraSocial">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <ul class="linea-tiempo">
+                                <li class="completa">
+                                    <p>Iniciado</p>
+                                </li>
+                                <li class="actual">
+                                    <p>En proceso</p>
+                                </li>
+                                <li>
+                                    <p>Finalizado</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Mostrar modal
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog s-200 alerta">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title" id="exampleModalLabel">Titulo de modal</h3>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                    ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-primary">Guardar cambios</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <fieldset>
+                            <legend>Radio</legend>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Radio
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Checkbox checked
+                                </label>
+                            </div>
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <legend>Checks</legend>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Checkbox
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Checked checkbox
+                                </label>
+                            </div>
+                            <br>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                <label class="form-check-label" for="flexSwitchCheckDefault">Switch</label>
+                            </div>
+                        </fieldset>
+                        <br>
+                        <p>Tabla</p>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Titulo 1</th>
+                                    <th scope="col">Titulo 2</th>
+                                    <th scope="col">Titulo 3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Contenido 1</td>
+                                    <td>Contenido 2</td>
+                                    <td>Contenido 3</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Contenido 1</td>
+                                    <td>Contenido 2</td>
+                                    <td>Contenido 3</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td colspan="2">Contenido 1</td>
+                                    <td>Contenido 3</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <p>Paginación</p>
+                        <nav aria-label="Paginación">
+                            <ul class="pagination">
+                                <li class="page-item disabled"><a class="page-link" href="#">Anterior</a></li>
+                                <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+                            </ul>
+                        </nav>
+                        <br>
+                        <p>Contenido de texto.</p>
+                        <p>Contenido de texto.</p>
+                        <p>Contenido de texto.</p>
+                        <p>Contenido de texto.</p>
+                        <p>Contenido de texto.</p>
+                        <p>Contenido de texto.</p>
+                        <p>Contenido de texto.</p>
+                        <p>Contenido de texto.</p>
+                        <p>Contenido de texto.</p>
+                        <p>Contenido de texto.</p>
+                        <p>Contenido de texto.</p>
+                        <p>Contenido de texto.</p>
+                        <p>Contenido de texto.</p>
+                        <p>Contenido de texto.</p>
+                        <p>Contenido de texto.</p>
+                        <p>Contenido de texto.</p>
+                        <p>Contenido de texto.</p>
+                        <p>Contenido de texto.</p>
+                        <p>Contenido de texto.</p>
+                        <p>Contenido de texto.</p>
+                        <p>Contenido de texto.</p>
+                        <h2 class="mb-3">Fin</h2>
+                    </div>
+
+                    <!-- Aside -->
+                    <div class="col-12 col-lg-4 col-xl-3 offset-xl-2">
+                        <hr class="d-block d-lg-none">
+                        <h2 class="mb-3">Titulo columna secundaria</h2>
+                        <p>Contenido de texto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--  / CONTENIDO -->
+
+       <!-- scripts -->
+      
+        
+       <script src="jquery/dist/jquery.min.js"></script>
+       <script type="text/javascript" src="jquery/dist/custom.js"></script>
+       <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+ 
+       <script>
+           $(document).ready(function(){
+               $('[data-toggle="tooltip"]').tooltip();
+           });
+       </script>
+       <!-- scripts -->
+</body>
+</html>

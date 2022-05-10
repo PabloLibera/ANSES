@@ -98,10 +98,20 @@
                 <li class="nav-item">
                     <div class="dropdown">
                         <button class="btn btn-secondary ms-2 ms-xl-3 dropdown-toggle" type="button" id="nombreUsuario" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Datos personales">
-                            <i class="icn-modo-usuario" aria-hidden="true"></i>
+                            <i class="icn-modo-representado" aria-hidden="true"></i>
                             <span>Pablo Diego Piñero</span>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end s-40" aria-labelledby="nombreUsuario" role="menubar">
+                            <li aria-hidden="true">
+                                <h4 class="dropdown-header">Representado por:</h4>
+                            </li>
+                            <li role="menuitem" id="nombreRepresentante">
+                                <div class="dropdown-item">
+                                    <i class="icn-modo-representado" aria-hidden="true"></i>
+                                    <span>Pablo Diego Piñero</span>
+                                </div>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
                             <li role="menuitem" class="d-xl-none" aria-hidden="true">
                                 <div class="dropdown-item">
                                     <i class="icn-modo-usuario" aria-hidden="true"></i>
@@ -401,7 +411,7 @@
                         </div>
                         
                         <hr>
-                        <h2>Mis accesos</h2>
+                        <h2 class="mb-3">Mis accesos</h2>
 
                         <div class="row gy-4">
                             <div class="col-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
@@ -554,18 +564,18 @@
     </main>
     <!--  / CONTENEDOR -->
 
-          <!-- scripts -->
+      <!-- scripts -->
       
         
-          <script src="jquery/dist/jquery.min.js"></script>
-          <script type="text/javascript" src="jquery/dist/custom.js"></script>
-          <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    
-          <script>
-              $(document).ready(function(){
-                  $('[data-toggle="tooltip"]').tooltip();
-              });
-          </script>
-          <!-- scripts -->
+      <script src="jquery/dist/jquery.min.js"></script>
+      <script type="text/javascript" src="jquery/dist/custom.js"></script>
+      <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+      <script>
+          $(document).ready(function(){
+              $('[data-toggle="tooltip"]').tooltip();
+          });
+      </script>
+      <!-- scripts -->
 </body>
 </html>

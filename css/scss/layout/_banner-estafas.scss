@@ -1,0 +1,33 @@
+#bannerEstafas {
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+
+    .encabezado {
+        height: 85px;
+        background-color: $blanco;
+
+        &::before {
+            content: '';
+            width: 50%;
+            height: 100%;
+            display: inline-block;
+            background: url('../imgs/banner-lineas.svg') left center;
+            background-size: contain;
+        }
+        &::after {
+            content: '';
+            width: 50%;
+            height: 100%;
+            display: inline-block;
+            background: url('../imgs/banner-icono.svg') no-repeat center center;
+            background-size: 4rem;
+        }
+
+    }
+
+    .cuerpo {
+        background-color: $institucional;
+        padding: 1rem;
+    }
+}

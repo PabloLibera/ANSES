@@ -1,0 +1,12 @@
+.form-control {
+    border: 1px solid $borde;
+    border-radius: 5px;
+
+    + .btn-outline-primary {
+        border-left: none;
+    }
+    
+    + .btn-outline-secondary {
+        border-left: none;
+    }
+}
